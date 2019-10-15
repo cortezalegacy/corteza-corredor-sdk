@@ -1,0 +1,14 @@
+{
+  "name": "corteza-corredor-sdk",
+  "description": "Provides boilerplate for testing, linting, ...",
+  "version": "2019.1.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "contributors": [
+    "Tomaž Jerman <tomaz.jerman@gmail.com>"
+  ],
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
