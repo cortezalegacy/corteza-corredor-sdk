@@ -3,5 +3,5 @@
  * @returns {String}
  */
 export default function hello () {
-  return "Hello Corteza!"
+  return 'Hello Corteza!'
 }
