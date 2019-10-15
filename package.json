@@ -8,7 +8,33 @@
     "Tomaž Jerman <tomaz.jerman@gmail.com>"
   ],
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "test:unit": "nyc mocha -r esm --recursive src/**/*.spec.js"
+  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "sinon": "^7.4.0"
+  },
+
+  "nyc": {
+    "all": true,
+    "reporter": ["lcov", "text"],
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js"
+    ],
+
+    "check-coverage": true,
+    "per-file": true,
+    "branches": 90,
+    "lines": 90,
+    "functions": 90,
+    "statements": 90
+  }
 }
